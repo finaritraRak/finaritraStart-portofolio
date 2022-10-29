@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>fyStart - Portofolio</title>
+
+  <link rel="stylesheet" href="assets/css/maicons.css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="assets/css/theme.css">
+
+
+<style>
+   .proh1{
+      color: #1a2f42;
+      margin: 20px 0;
+      padding-bottom: 20px;
+      border-bottom:1px dashed grey;
+    }
+    .proh1 .prospan{
+      display: block;
+    }
+
+    .proh1 .prospan:nth-child(1){
+      font-weight: normal;
+      color: #6C55F9;
+    }
+
+    .card-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      grid-gap: 30px;
+      margin: 80px 0;
+    }
+
+    .card-wrapper{
+      position: relative;
+      min-height: 350px;
+      perspective: 2000px;
+      perspective-origin: top;
+    }
+
+    .card-wrapper:hover .card{
+      transform: rotateY(180deg);
+    }
+
+    .card{
+      position: relative;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+      color: white;
+      font-weight: bold;
+    }
+    .card-front,
+    .card-back{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding: 30px;
+      border-radius: 8px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .card-front{
+      background: #6C55F9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-wrapper:nth-child(even) .card-front{
+      background-color: #1a2f42;
+    }
+
+    .card-front p {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    .arrow-icon{
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+    }
+
+    .card-price {
+      font-size: 45px;
+    }
+
+    .card-back{
+      background: #6C55F9;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-wrapper:nth-child(even) .card-back{
+      background-color: #1a2f42;
+    }
+
+    .card-back a{
+      display: inline-block;
+      border-radius: 10px;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: normal;
+      background-color: #fff;
+      font-size: 14px;
+      color: #333;
+      transition: 
+      background-color 0.3s ease-out,
+            color 0.3s ease-out;
+    }
+
+    .card-wrapper:nth-child(odd) .card-back a:hover{
+      background-color: #1a2f42;
+      color: #fff;
+    }
+
+    .card-wrapper:nth-child(even) .card-back a:hover{
+      background-color: #6C55F9;
+      color: #fff;
+    }
+
+    .constellation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+</style>
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+      <div class="container">
+        <a href="#" class="navbar-brand">Fy<span class="text-primary">Start</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#formations">Formations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilité">Habilité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-banner home-banner"style="background-image: linear-gradient(-45deg, #667eea 0%, #764ba2 100%);">
+
+        <div class="row align-items-center flex-wrap-reverse h-100">
+
+          <div class="col-md-6 py-5 wow fadeInLeft">
+            <h1 style="color:#fff;" class="mb-4">Aina Finaritra Rakotonindrainy</h1>
+            <p class="text-lg text-grey mb-5">developpeur full stack</p>
+            <a href="#about" class="btn btn-primary btn-split">engagez moi <div class="fab"><span class="mai-download"></span></div></a>
+          </div>
+          <div class="col-md-6 py-5 wow zoomIn">
+            <div class="img-fluid text-center">
+              <img width="350px" style="border-radius: 100%;" src="assets/image/ffi.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="btn-scroll" data-role="smoothscroll"><span class="mai-arrow-down"></span></a>
+      </div>
+        <canvas class="constellation" data-radius="0"></canvas>
+    </div>
+  </header>
+
+  <div class="page-section">
+    <div class="container">
+        <h2 id="formations" class="text-center wow fadeInUp">Formations</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+
+            <div class="header">
+              <img src="assets/img/services/service-1.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">DIPLOME DE TECHNICIEN SUPERIEUR (DTS) EN INFORMATIQUE</h5>
+              <p>à INSTITUT SUPERIEUR RLG Manjakaray</p>
+              2017 - 2018
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-2.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">DIPLOME DE LICENCE PROFESSIONNELLE EN INFORMATIQUE</h5>
+              <p>à INSTITUT SUPERIEUR RLG Manjakaray</p>
+              2019 - 2020
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Stagiaire Developpeur web</h5>
+              <p>Teko consulting</p>
+              2019
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Formation prise en main et exploitation de laravel</h5>
+              <p>Orange Digital Center</p>
+              2022
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">Formation UI/UX</h5>
+              <p>Orange Digital Center</p>
+              2022
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  <div class="page-section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-3 wow fadeInUp">
+          <span id="apropos" class="subhead">A propos</span>
+          <h2 class="title-section">À Propos De Moi</h2>
+          <div class="divider"></div>
+
+          <p>Aina Finaritra, développeur web freelance à Tana, Madagascar. Je suis à votre disposition pour répondre à tout type de projets de création de sites internet vitrine, e-commerce, de développement spécifique ou d’applications web. Passionné par les technologies Web, je mets mes compétences au service de vos besoins dans divers domaines.</p>
+          <p></p>
+          <a href="cv.png" class="btn btn-primary mt-3">Telecharger CV</a>
+        </div>
+        <div class="col-lg-6 py-3 wow fadeInRight">
+          <div class="img-fluid py-3 text-center">
+            <img width="50%" src="assets/image/ffi.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="page-section">
+    <div class="container">
+        <h2 id="services" class="text-center wow fadeInUp">Services</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+
+            <div class="header">
+              <img src="assets/img/services/service-1.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">WEB DESIGN</h5>
+              <p>Optimiser l’ergonomie d’un site web, c’est travailler en accord entre les besoins et les attentes de ses utilisateurs, tout en mettant l’accent sur la simplicité d’usage.</p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-2.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">CRÉATION DE SITE INTERNET</h5>
+              <p>Création de site internet sur mesure, adapté à tous les écrans (smartphone, tablette et ordinateur), optimisé pour le SEO et de qualité.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">AUDIT DE SITE WEB</h5>
+              <p>Votre site internet n’est plus aussi performant qu’au départ ? Avec les années, les technologies utilisées dans le web ont évoluées, votre site doit aussi !</p>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-service wow fadeInUp">
+            <div class="header">
+              <img src="assets/img/services/service-3.svg" alt="">
+            </div>
+            <div class="body">
+              <h5 class="text-secondary">DÉVELOPPEMENT D'APPLICATION MOBILE</h5>
+              <p>Aujourd’hui, plus de la moitié du traffic sur le web est réalisé via un périphérique mobile (smartphone, tablette). Le développement d’une application mobile pour votre entreprise est donc un service devenu incontournable. développement d’application iOS (iPhone, iPad) développement d’application Android (Asus, Samsung, Sony, …)</p>
+              
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
+
+
+
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page-section bg-light">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div id="habilité" class="subhead">Habilité</div>
+        <!--<h2 class="title-section">How SEO Team Can Help</h2>-->
+        <h5>Je vous accompagne de A à Z dans la réalisation de votre projet digital. En partant du choix du type de site internet adapté, en passant par l’achat du nom de domaine, de l’hébergement ainsi que le suivi durant le projet. Sans oublier le développement d’une stratégie de référencement naturel et jusqu’à la mise en ligne finale ainsi que lors de la maintenance post-production, je suis disponible pour répondre à la moindre de vos questions. En tant que développeur web freelance, j’ai pour ligne de conduite de vous conseiller sur les meilleures pratiques sur le web et de vous accompagner tout au long de votre projet.</h5>
+        <div class="divider mx-auto"></div>
+      </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>PHP</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>JAVASCRIPT</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>HTML</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>CSS</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>NODE</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>ANGULAR</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>REACT</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>VUE</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>LARAVEL</h5>
+              
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+            <div class="features">
+              <div class="header mb-3">
+                <span class="mai-business"></span>
+              </div>
+              <h5>SYMFONY</h5>
+              
+            </div>
+          </div>
+        </div>
+
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+
+
+  <!-- Banner info -->
+<!--  <div class="page-section banner-info">
+    <div class="wrap bg-image" style="background-image: url(assets/img/bg_pattern.svg);">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 pr-lg-5 wow fadeInUp">
+            <h2 class="title-section">SEO to Improve Brand <br> Visibility</h2>
+            <div class="divider"></div>
+            <p>We're an experienced and talented team of passionate consultants who breathe with search engine marketing.</p>
+            
+            <ul class="theme-list theme-list-light text-white">
+              <li>
+                <div class="h5">SEO Content Strategy</div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+              </li>
+              <li>
+                <div class="h5">B2B SEO</div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 py-3 wow fadeInRight">
+            <div class="img-fluid text-center">
+              <img src="assets/img/banner_image_2.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .wrap -->
+  </div> <!-- .page-section -->
+-->
+  <!-- Blog -->
+  <br><hr>
+   <h2 id="project" class="text-center wow fadeInUp">Project</h2>
+<div class="card-container">
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/capture.png" alt="">
+              <p class="prop">Quiz en ligne</p>
+              <p class="card-price">
+                framework: codeigniter,php, javascript, jquery, ajax
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              
+               <a href="https://github.com/finaritraStart/quiz-school-codeigniter3" class="btn">code source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/coblog1.png" alt="">
+              <p class="prop">blog</p>
+              <p class="card-price">
+                framework: laravel,php, javascript, html, css
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="https://github.com/finaritraStart/coblog-laravel" class="btn">code source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/commercel.png" alt="">
+              <p>Look-i | Ecommerce</p>
+              <p class="card-price">
+                framework: laravel
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="https://github.com/finaritraStart/look-i-laravel-ecommerce" class="btn">code source</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/quizeduk.png" alt="">
+              <p>QuizEduk</p>
+              <p class="card-price">
+                javascript
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="https://github.com/finaritraStart/look-i-laravel-ecommerce" class="btn">code source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/bibliorlo.png" alt="">
+              <p>Bibliotheque numérique</p>
+              <p class="card-price">
+                framework: Codeigniter 3, bootstrap
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="#" class="btn">code source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper wow zoomIn">
+          <div class="card">
+            <div class="card-front">
+              <img class="imgproject" src="assets/project/saba1.png" alt="">
+              <p>Saba</p>
+              <p class="card-price">
+                framework: angular
+              </p>
+              <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+              <a href="https://ng-recipe-app-7f934.web.app/login" class="btn">voir</a>
+            </div>
+          </div>
+        </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-3 py-3">
+          <h3>fyStart</h3>
+          <p></p>
+
+          <div class="social-media-button">
+            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#"><span class="mai-logo-twitter"></span></a>
+           
+          </div>
+        </div>
+     
+        <div class="col-lg-3 py-3">
+          <h5>Contact</h5>
+          <p>IIE26DD Iadiambola Nanisana</p>
+          <a href="#" class="footer-link">0333218143</a>
+          <a href="#" class="footer-link">fycityplay@gmail.com</a>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Newsletter</h5>
+          <p>Get updates, news or events on your mail.</p>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Enter your email..">
+            <button type="submit" class="btn btn-success btn-block mt-2">abonné</button>
+          </form>
+        </div>
+      </div>
+
+      <p class="text-center" id="copyright">Copyright &copy; 2022. <a href="" target="_blank">fyStart</a></p>
+    </div>
+  </footer>
+<script src="assets/js/page.min.js"></script>
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/google-maps.js"></script>
+
+<script src="assets/vendor/wow/wow.min.js"></script>
+
+<script src="assets/js/theme.js"></script>
+  
+</body>
+</html>
